@@ -1,11 +1,16 @@
 {
-	"name": "FinStat Extension",
-	"description" : "FinStat Extension",
+	"name": "FinStat",
+	"description" : "Vyhľadať informácie o firme",
 	"version": "1.0",
 	"manifest_version": 2,
 	"browser_action": {
 		"default_popup": "finstat.html",
-		"default_icon": "finstat-logo.png"
+		"default_title": "Vyhľadať informácie o firme",
+		"default_icon": { 
+			"16": "assets/finstat-logo-16.png",
+			"48": "assets/finstat-logo-48.png",
+			"128": "assets/finstat-logo-128.png"
+		}
 	},
 	"permissions": [
 		"tabs",
