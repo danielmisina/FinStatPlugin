@@ -7,10 +7,12 @@ chrome.tabs.executeScript(null, { file: "selection.js" });
  */
 function onSelection(payload) {
 	var site = "https://finstat.sk/",
-		queryPrefix = "Hladaj?query=";
+		searchQuery = "Hladaj?query=",
+		extensionSuffix = "&extension=true";
 
+	// Extend URL
 	if (payload && payload.text && payload.text.length > 0) {
-        site += queryPrefix + payload.text;
+        site += searchQuery + payload.text + extensionSuffix;
 	}
 
 	document.getElementById('finstatSite').src = site;
