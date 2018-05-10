@@ -12,8 +12,7 @@
 			"128": "assets/finstat-logo-128.png"
 		}
 	},
-	"permissions": [
-		"tabs",
-		"<all_urls>"
+	"permissions": [		
+		"*://*/*"
 	]
 }

@@ -15,5 +15,5 @@ function onSelection(payload) {
         site += searchQuery + payload.text + extensionSuffix;
 	}
 
-	document.getElementById('finstatSite').src = site;
+	document.getElementById('finstatSite').src = encodeURI(site);
 }
